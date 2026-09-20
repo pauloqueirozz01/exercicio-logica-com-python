@@ -1,29 +1,29 @@
-# Entrada de Dados
-# Declara variável
-nome = "Gustavo"
-sobrenome = "Horta"
 
-#String é tudo aquilo que está Entre aspas, seja simples ou duplas
+print("""
+░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
+██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
+╚█████╗░███████║██████╦╝██║░░██║██████╔╝  █████╗░░░╚███╔╝░██████╔╝██████╔╝█████╗░░╚█████╗░╚█████╗░
+░╚═══██╗██╔══██║██╔══██╗██║░░██║██╔══██╗  ██╔══╝░░░██╔██╗░██╔═══╝░██╔══██╗██╔══╝░░░╚═══██╗░╚═══██╗
+██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║  ███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
+╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░  
+""")
 
-num1 = 10
-num2 = 20
+print("<-- Bem vindo ao nosso programa -->");
+print("Este é um programa simples em Python.\n");
+# Abaixo, solicitamos que o usuário digite o que ele quer fazer no nosso programa, listando as opções dele
+# e armazenando ela a resposta logo após a pergunta, para que possamos utilizar ela em nosso programa.
 
-# Impressão no terminal ou Mostrar no terminal
-# Comando print() é utilizado para mostrar informações na tela
+print("Digite uma das opções abaixo:");
+options = ["Cadastrar", "Consultar", "Remover", "Sair"];
 
-# Processamento de Dados
-# Realizamos operações matemáticas, 
-# verificações lógicas,
-# e manipulação de dados
-nomeCompleto = nome + " " + sobrenome
+# Usando um Loop for in range(len(options)) para percorrer a lista de opções
+# e imprimir cada uma delas com seu índice correspondente.
+for i in range(len(options)):
+    print(f"{i}: {options[i]}")
 
-# Concatenação de Strings é a junção de duas ou mais Strings
-soma = num1 + num2
+# Atribuímos uma variável para armazenar a resposta do usuário
+input_typed = input("O que você deseja fazer hoje?\n");
 
-# Saída de Dados
-# imprimir na tela o resultado de uma operação matemática
-# ou mostrar o resultado da verifição lógica
+print(f"Você escolheu: {input_typed}\n");
 
-print("Nome: " + nome)
-print("Sobrenome: " + sobrenome)
-print("O nome completo do usuário é: " + nomeCompleto)
+print("<-- Fim do programa -->\n");
