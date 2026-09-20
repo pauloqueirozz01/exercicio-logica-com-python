@@ -2,6 +2,8 @@
 
 Este repositório reúne explicações e desafios progressivos para aprender lógica de programação com Python. Cada assunto tem uma leitura teórica e uma lista de atividades para praticar.
 
+**Está começando do zero?** Siga o [tutorial de instalação do Python](instalando-python.md) para preparar Windows, macOS ou Ubuntu, aprender os termos básicos e testar seu primeiro programa antes dos exercícios.
+
 ## Como estudar
 
 1. Leia a **teoria** do assunto e execute os exemplos, alterando os valores para observar o resultado.
@@ -46,7 +48,7 @@ Os arquivos de desafios em Python são espaços para escrever soluções. Crie n
 
 ## Como executar
 
-Instale o [Python 3](https://www.python.org/downloads/) e clone o projeto:
+Instale o Python 3 seguindo o [tutorial passo a passo](instalando-python.md) e clone o projeto:
 
 ```bash
 git clone https://github.com/pauloqueirozz01/exercicio-logica-com-python.git
