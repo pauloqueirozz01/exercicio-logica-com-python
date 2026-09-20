@@ -1,29 +1,31 @@
 import os
 
-print("""
+
+header_inicio = """
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
 ╚█████╗░███████║██████╦╝██║░░██║██████╔╝  █████╗░░░╚███╔╝░██████╔╝██████╔╝█████╗░░╚█████╗░╚█████╗░
 ░╚═══██╗██╔══██║██╔══██╗██║░░██║██╔══██╗  ██╔══╝░░░██╔██╗░██╔═══╝░██╔══██╗██╔══╝░░░╚═══██╗░╚═══██╗
 ██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║  ███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
 ╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░  
-""")
-header_cadastro = """
+"""
+
+header_register = """
 
 █▀▀ ▄▀█ █▀▄ ▄▀█ █▀ ▀█▀ █▀█ █▀█
 █▄▄ █▀█ █▄▀ █▀█ ▄█ ░█░ █▀▄ █▄█
 """
-header_consulta = """
+header_query = """
 
 █▀▀ █▀█ █▄░█ █▀ █░█ █░░ ▀█▀ ▄▀█
 █▄▄ █▄█ █░▀█ ▄█ █▄█ █▄▄ ░█░ █▀█
 """
-header_remover = """
+header_remove = """
 
 █▀█ █▀▀ █▀▄▀█ █▀█ █░█ █▀▀ █▀█
 █▀▄ ██▄ █░▀░█ █▄█ ▀▄▀ ██▄ █▀▄
 """
-header_saindo = """
+header_exiting = """
 
 █▀ ▄▀█ █ █▄░█ █▀▄ █▀█ ░ ░ ░
 ▄█ █▀█ █ █░▀█ █▄▀ █▄█ ▄ ▄ ▄
@@ -39,7 +41,10 @@ print("Este é um programa simples em Python.\n");
 print("Digite uma das opções abaixo:");
 options = ["Cadastrar", "Consultar", "Remover", "Sair"];
 
-def finalizar_app():
+def show_header():
+     print(header_inicio);
+
+def close_app():
      # os.system('cls')
      os.system('clear')
      print("Encerrando o programa.\n")
@@ -58,22 +63,29 @@ print(f"Você escolheu: {input_typed}\n");
 # para mostrar uma mensagem diferente em determinada opção escolhida pelo usuário.
 if (input_typed != "Sair"):
     if (input_typed == "Cadastrar"):
-        print(header_cadastro)
+        print(header_register)
     elif (input_typed == "Consultar") :
-        print(header_consulta)
+        print(header_query)
     elif (input_typed == "Remover") :
-        print(header_remover)
+        print(header_remove)
 else :
-    print(header_saindo)
+    print(header_exiting)
 
 # Também podemos fazer de uma forma mais simplificada, 
 # mas isso seria para somente a gente entender que há mais de uma forma de escrever um algoritmo.
 if input_typed == "Cadastrar":
-      print(header_cadastro)
+      print(header_register)
 elif input_typed == "Consultar":
-      print(header_consulta)
+      print(header_query)
 elif input_typed == "Remover":
-      print(header_remover)
+      print(header_remove)
 elif input_typed == "Sair":
-      print(header_saindo)
-      finalizar_app()
+      print(header_exiting)
+      close_app()
+
+
+def main():
+     show_header;
+
+if __name__ == "__main__":
+    main()
