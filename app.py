@@ -7,6 +7,26 @@ print("""
 ██████╔╝██║░░██║██████╦╝╚█████╔╝██║░░██║  ███████╗██╔╝╚██╗██║░░░░░██║░░██║███████╗██████╔╝██████╔╝
 ╚═════╝░╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝  ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░  
 """)
+header_cadastro = """
+
+█▀▀ ▄▀█ █▀▄ ▄▀█ █▀ ▀█▀ █▀█ █▀█
+█▄▄ █▀█ █▄▀ █▀█ ▄█ ░█░ █▀▄ █▄█
+"""
+header_consulta = """
+
+█▀▀ █▀█ █▄░█ █▀ █░█ █░░ ▀█▀ ▄▀█
+█▄▄ █▄█ █░▀█ ▄█ █▄█ █▄▄ ░█░ █▀█
+"""
+header_remover = """
+
+█▀█ █▀▀ █▀▄▀█ █▀█ █░█ █▀▀ █▀█
+█▀▄ ██▄ █░▀░█ █▄█ ▀▄▀ ██▄ █▀▄
+"""
+header_saindo = """
+
+█▀ ▄▀█ █ █▄░█ █▀▄ █▀█ ░ ░ ░
+▄█ █▀█ █ █░▀█ █▄▀ █▄█ ▄ ▄ ▄
+"""
 
 print("<-- Bem vindo ao nosso programa -->");
 print("Este é um programa simples em Python.\n");
@@ -27,5 +47,28 @@ for i in range(len(options)):
 input_typed = input("O que você deseja fazer hoje?\n");
 
 print(f"Você escolheu: {input_typed}\n");
+
+# Usando lógica condicional,
+# para mostrar uma mensagem diferente em determinada opção escolhida pelo usuário.
+if (input_typed != "Sair"):
+    if (input_typed == "Cadastrar"):
+        print(header_cadastro)
+    elif (input_typed == "Consultar") :
+        print(header_consulta)
+    elif (input_typed == "Remover") :
+        print(header_remover)
+else :
+    print(header_saindo)
+
+# Também podemos fazer de uma forma mais simplificada, 
+# mas isso seria para somente a gente entender que há mais de uma forma de escrever um algoritmo.
+if input_typed == "Cadastrar":
+      print(header_cadastro)
+elif input_typed == "Consultar":
+      print(header_consulta)
+elif input_typed == "Remover":
+      print(header_remover)
+elif input_typed == "Sair":
+      print(header_saindo)
 
 print("<-- Fim do programa -->\n");
