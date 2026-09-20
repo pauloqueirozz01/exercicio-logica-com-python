@@ -58,4 +58,5 @@ O valor arredondado de pi é: 3.14
 
 ## Confira sua prática
 
-Antes de executar cada arquivo, tente prever o que aparecerá no terminal. Compare a saída com o enunciado, inclusive letras maiúsculas, espaços, pontuação e quebras de linha. No exercício 2, troque os valores das variáveis e veja se a frase acompanha a mudança.
+Antes de executar cada arquivo, tente prever o que aparecerá no terminal.
+Compare a saída com o enunciado, inclusive letras maiúsculas, espaços, pontuação e quebras de linha. No exercício 2, troque os valores das variáveis e veja se a frase acompanha a mudança.
