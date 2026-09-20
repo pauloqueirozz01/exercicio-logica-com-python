@@ -15,6 +15,7 @@ As listas trazem os problemas e resultados esperados; a implementação fica com
 
 | Tema | Explicação | Atividades |
 | --- | --- | --- |
+| Primeiros passos: `print()` e variáveis | [Exemplos em Python](praticando-logica/praticando_print.py) e [variáveis](praticando-logica/praticando_variaveis.py) | [Praticando lógica](praticando-logica/desafios.md) |
 | Operadores aritméticos | [Teoria de aritmética](exercicios-aritmeticos/teoria.md) | [Desafios de aritmética](exercicios-aritmeticos/desafios.md) |
 | Condições e operadores lógicos | [Teoria de condicionais](exercicios-condicionais/teoria.md) | [Desafios de condicionais](exercicios-condicionais/desafios.md) |
 
@@ -22,6 +23,11 @@ As listas trazem os problemas e resultados esperados; a implementação fica com
 .
 ├── README.md
 ├── app.py                         # Exemplo inicial de variáveis e saída
+├── praticando-logica/
+│   ├── desafios.md                # Primeira lista de prática
+│   ├── praticando_print.py        # Exemplos de impressão no terminal
+│   ├── praticando_variaveis.py    # Exemplos de variáveis
+│   └── nomes.py                   # Outro exemplo com nomes
 ├── exercicios-aritmeticos/
 │   ├── teoria.md                  # Conceitos e exemplos
 │   ├── desafios.md                # Lista progressiva de exercícios
@@ -49,6 +55,7 @@ Execute o exemplo inicial ou um exercício a partir da raiz do repositório:
 
 ```bash
 python3 app.py
+python3 praticando-logica/praticando_print.py
 python3 exercicios-aritmeticos/desafio-aritmetico1.py
 python3 exercicios-condicionais/desafio-condicional.py
 ```

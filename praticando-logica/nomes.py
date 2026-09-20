@@ -4,7 +4,6 @@ nome = "Gustavo"
 sobrenome = "Horta"
 
 #String é tudo aquilo que está Entre aspas, seja simples ou duplas
-
 num1 = 10
 num2 = 20
 

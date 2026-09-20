@@ -10,8 +10,10 @@ print("""
 
 print("<-- Bem vindo ao nosso programa -->");
 print("Este é um programa simples em Python.\n");
+
 # Abaixo, solicitamos que o usuário digite o que ele quer fazer no nosso programa, listando as opções dele
-# e armazenando ela a resposta logo após a pergunta, para que possamos utilizar ela em nosso programa.
+# e armazenando ela a resposta logo após a pergunta, 
+# para que possamos utilizar ela em nosso programa.
 
 print("Digite uma das opções abaixo:");
 options = ["Cadastrar", "Consultar", "Remover", "Sair"];
