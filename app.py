@@ -1,3 +1,4 @@
+import os
 
 print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
@@ -38,6 +39,11 @@ print("Este é um programa simples em Python.\n");
 print("Digite uma das opções abaixo:");
 options = ["Cadastrar", "Consultar", "Remover", "Sair"];
 
+def finalizar_app():
+     # os.system('cls')
+     os.system('clear')
+     print("Encerrando o programa.\n")
+
 # Usando um Loop for in range(len(options)) para percorrer a lista de opções
 # e imprimir cada uma delas com seu índice correspondente.
 for i in range(len(options)):
@@ -70,5 +76,4 @@ elif input_typed == "Remover":
       print(header_remover)
 elif input_typed == "Sair":
       print(header_saindo)
-
-print("<-- Fim do programa -->\n");
+      finalizar_app()

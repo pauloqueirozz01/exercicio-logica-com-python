@@ -71,7 +71,7 @@ print(f"Seu nome completo é: {nome_completo}")
 3. `+` junta as três strings: nome, um espaço (`" "`) e sobrenome. O resultado fica em `nome_completo`.
 4. A última linha usa o valor já montado para apresentar a pessoa.
 
-`input()` sempre devolve texto. Assim, a idade e o ano digitados no arquivo servem para compor uma mensagem, mas ainda não para fazer contas. Nos exercícios de aritmética você aprenderá a converter textos para números. No desafio 2 desta pasta, os valores são definidos diretamente em variáveis; você pode praticar `input()` depois, como uma experiência adicional.
+`input()` sempre devolve texto. Assim, a idade e o ano digitados no arquivo servem para compor uma mensagem, mas ainda não para fazer contas. Siga para o [guia sobre `str`, `int` e conversão](1.3-praticando-variaveis-str-int/README.md) para entender essa diferença e converter o texto recebido em número. No desafio 2 desta pasta, os valores são definidos diretamente em variáveis; você pode praticar `input()` depois, como uma experiência adicional.
 
 O restante do arquivo repete esse caminho com novos dados:
 

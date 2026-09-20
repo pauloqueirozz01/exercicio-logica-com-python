@@ -18,6 +18,7 @@ As listas trazem os problemas e resultados esperados; a implementação fica com
 | Tema | Explicação | Atividades |
 | --- | --- | --- |
 | Primeiros passos: `print()` e variáveis | [Teoria e exemplos](1-praticando-logica/teoria.md) | [Praticando lógica](1-praticando-logica/desafios.md) |
+| Tipos `str` e `int`, entrada e conversão | [Guia com perguntas e respostas](1-praticando-logica/1.3-praticando-variaveis-str-int/README.md) | [Exemplos para executar](1-praticando-logica/1.3-praticando-variaveis-str-int/manipulando_int_str.py) |
 | Operadores aritméticos | [Teoria de aritmética](2-exercicios-aritmeticos/teoria.md) | [Desafios de aritmética](2-exercicios-aritmeticos/desafios.md) |
 | Condições e operadores lógicos | [Teoria de condicionais](3-exercicios-condicionais/teoria.md) | [Desafios de condicionais](3-exercicios-condicionais/desafios.md) |
 
@@ -30,6 +31,11 @@ As listas trazem os problemas e resultados esperados; a implementação fica com
 │   ├── desafios.md                # Primeira lista de prática
 │   ├── praticando_print.py        # Exemplos de impressão no terminal
 │   ├── praticando_variaveis.py    # Exemplos de variáveis
+│   ├── 1.3-praticando-variaveis-str-int/
+│   │   ├── README.md              # Guia sobre str, int e conversão
+│   │   ├── int.py                 # Exemplos com números inteiros
+│   │   ├── str.py                 # Exemplos com textos
+│   │   └── manipulando_int_str.py # Conversão e entrada do usuário
 │   ├── praticando_tupla.py        # Exemplo adicional
 │   └── nomes.py                   # Outro exemplo com nomes
 ├── 2-exercicios-aritmeticos/
