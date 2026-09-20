@@ -1,7 +1,7 @@
 import os
 
 
-header_inicio = """
+header_start = """
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
 ╚█████╗░███████║██████╦╝██║░░██║██████╔╝  █████╗░░░╚███╔╝░██████╔╝██████╔╝█████╗░░╚█████╗░╚█████╗░
@@ -42,7 +42,7 @@ print("Digite uma das opções abaixo:");
 options = ["Cadastrar", "Consultar", "Remover", "Sair"];
 
 def show_header():
-     print(header_inicio);
+     print(header_start);
 
 def close_app():
      # os.system('cls')
@@ -51,41 +51,55 @@ def close_app():
 
 # Usando um Loop for in range(len(options)) para percorrer a lista de opções
 # e imprimir cada uma delas com seu índice correspondente.
-for i in range(len(options)):
-    print(f"{i}: {options[i]}")
+def show_option():
+    for i in range(len(options)):
+        print(f"{i}: {options[i]}")    
 
-# Atribuímos uma variável para armazenar a resposta do usuário
-input_typed = input("O que você deseja fazer hoje?\n");
-
-print(f"Você escolheu: {input_typed}\n");
-
-# Usando lógica condicional,
-# para mostrar uma mensagem diferente em determinada opção escolhida pelo usuário.
-if (input_typed != "Sair"):
+def get_input():
+     # Atribuímos uma variável para armazenar a resposta do usuário
+    input_typed = input("O que você deseja fazer hoje?\n");
+    print(f"Você escolheu: {input_typed}\n");
     if (input_typed == "Cadastrar"):
         print(header_register)
-    elif (input_typed == "Consultar") :
+    elif(input_typed == "Consultar"):
         print(header_query)
-    elif (input_typed == "Remover") :
+    elif(input_typed == "Remover"):
         print(header_remove)
-else :
-    print(header_exiting)
+    else :
+        print(header_exiting)
+        close_app()
 
-# Também podemos fazer de uma forma mais simplificada, 
-# mas isso seria para somente a gente entender que há mais de uma forma de escrever um algoritmo.
-if input_typed == "Cadastrar":
-      print(header_register)
-elif input_typed == "Consultar":
-      print(header_query)
-elif input_typed == "Remover":
-      print(header_remove)
-elif input_typed == "Sair":
-      print(header_exiting)
-      close_app()
+
+# # Usando lógica condicional,
+# # para mostrar uma mensagem diferente em determinada opção escolhida pelo usuário.
+# if (input_typed != "Sair"):
+#     if (input_typed == "Cadastrar"):
+#         print(header_register)
+#     elif (input_typed == "Consultar") :
+#         print(header_query)
+#     elif (input_typed == "Remover") :
+#         print(header_remove)
+# else :
+#     print(header_exiting)
+#     close_app()
+
+# # Também podemos fazer de uma forma mais simplificada, 
+# # mas isso seria para somente a gente entender que há mais de uma forma de escrever um algoritmo.
+# if input_typed == "Cadastrar":
+#       print(header_register)
+# elif input_typed == "Consultar":
+#       print(header_query)
+# elif input_typed == "Remover":
+#       print(header_remove)
+# elif input_typed == "Sair":
+#       print(header_exiting)
+#       close_app()
 
 
 def main():
-     show_header;
+    show_header();
+    show_option();
+    get_input();
 
 if __name__ == "__main__":
     main()
