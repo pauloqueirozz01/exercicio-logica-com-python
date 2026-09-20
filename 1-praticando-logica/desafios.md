@@ -4,7 +4,7 @@ Esta etapa prepara você para os exercícios das próximas pastas. Resolva os de
 
 Comece executando `praticando_print.py` e altere as frases para experimentar `print()`. Em seguida, observe em `praticando_variaveis.py` como um valor pode ser guardado e mostrado. Escreva suas respostas em novos arquivos com nomes iniciados por `praticando_`, um por exercício, para poder voltar a cada tentativa.
 
-Para executar um arquivo a partir da raiz do projeto, use `python3 praticando-logica/nome_do_arquivo.py`.
+Para executar um arquivo a partir da raiz do projeto, use `python3 1-praticando-logica/nome_do_arquivo.py`. Se precisar rever algum conceito, consulte a [teoria desta etapa](teoria.md).
 
 ## Lista de exercícios
 
