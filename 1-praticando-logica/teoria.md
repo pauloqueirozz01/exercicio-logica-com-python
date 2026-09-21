@@ -104,3 +104,5 @@ Aqui aparecem três passos que voltam em todo o repositório: **entrada** (o val
 ## Como saber se pode avançar
 
 Você está pronto para [a lista desta pasta](desafios.md) quando consegue prever a saída de um `print()`, explicar a diferença entre texto e número, guardar um valor em uma variável e usá-lo em outra linha. Resolva os quatro desafios na ordem. Depois, altere os valores e confira se ainda entende cada resultado; esse hábito será a base para os exercícios seguintes.
+
+Quando estiver confortável com essas ideias, siga para o [aprofundamento em funções e `match`](aprofundando-funcoes-e-match.md), que usa um menu de estudos para praticar chamadas de funções e escolhas entre opções.
