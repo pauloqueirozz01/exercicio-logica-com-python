@@ -18,18 +18,24 @@ class Account:
   # Lista todas as informações da Conta (nome e saldo do titular)
   def list_details(self):
     print(f"Mostrando informações da Conta:")
-    self.check_balance(),
+    self.check_balance()
     self.check_nameAccount()
 
   # Operação de depósito bancário
   def deposit(self):
-    value = int(input("Digite o valor que você quer depositar:"))
+    value = int(input("Digite o valor que você quer depositar: "))
     self.balanceAccount += value
     print(f"Você fez um depósito no valor de: R$ {value}")
     self.check_balance()
 
-  # Operação de Transferência Bancária
+ # Operação de Transferência Bancária
+  def send(self):
+    value = int(input("Digite o valor da transferência: "))
+    self.balanceAccount -= value
+    print(f"Você fez uma transferência no valor de R${value}")
+    self.check_balance()
 
 account_paulo = Account("Paulo", 60021)
 account_paulo.list_details()
 account_paulo.deposit()
+account_paulo.send()

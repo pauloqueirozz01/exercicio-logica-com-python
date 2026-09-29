@@ -15,13 +15,15 @@ As listas trazem os problemas e resultados esperados; a implementação fica com
 
 ## Conteúdo
 
-| Tema | Explicação | Atividades |
-| --- | --- | --- |
-| Primeiros passos: `print()` e variáveis | [Teoria e exemplos](1-praticando-logica/teoria.md) | [Praticando lógica](1-praticando-logica/desafios.md) |
-| Tipos `str` e `int`, entrada e conversão | [Guia com perguntas e respostas](1-praticando-logica/1.3-praticando-variaveis-str-int/README.md) | [Exemplos para executar](1-praticando-logica/1.3-praticando-variaveis-str-int/manipulando_int_str.py) |
-| Funções e escolhas com `match` (Python 3.10+) | [Aprofundamento com explicações](1-praticando-logica/aprofundando-funcoes-e-match.md) | [Menu para praticar](1-praticando-logica/praticando_match.py) |
-| Operadores aritméticos | [Teoria de aritmética](2-exercicios-aritmeticos/teoria.md) | [Desafios de aritmética](2-exercicios-aritmeticos/desafios.md) |
-| Condições e operadores lógicos | [Teoria de condicionais](3-exercicios-condicionais/teoria.md) | [Desafios de condicionais](3-exercicios-condicionais/desafios.md) |
+| Tema                                          | Explicação                                                                                       | Atividades                                                                                            |
+| --------------------------------------------- | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| Primeiros passos: `print()` e variáveis       | [Teoria e exemplos](1-praticando-logica/teoria.md)                                               | [Praticando lógica](1-praticando-logica/desafios.md)                                                  |
+| Tipos `str` e `int`, entrada e conversão      | [Guia com perguntas e respostas](1-praticando-logica/1.3-praticando-variaveis-str-int/README.md) | [Exemplos para executar](1-praticando-logica/1.3-praticando-variaveis-str-int/manipulando_int_str.py) |
+| Funções e escolhas com `match` (Python 3.10+) | [Aprofundamento com explicações](1-praticando-logica/aprofundando-funcoes-e-match.md)            | [Menu para praticar](1-praticando-logica/praticando_match.py)                                         |
+| Operadores aritméticos                        | [Teoria de aritmética](2-exercicios-aritmeticos/teoria.md)                                       | [Desafios de aritmética](2-exercicios-aritmeticos/desafios.md)                                        |
+| Condições e operadores lógicos                | [Teoria de condicionais](3-exercicios-condicionais/teoria.md)                                    | [Desafios de condicionais](3-exercicios-condicionais/desafios.md)                                     |
+| POO e métodos especiais                       | [Teoria de `__init__`, `__str__` e `self`](4-aprendendo-POO/teoria.md)                            | [Desafios de métodos especiais](4-aprendendo-POO/desafios.md)                                         |
+| Revisão, funções e coleções                    | [Teoria de listas, conjuntos e dicionários](5-exercicios-basicos/teoria.md)                       | [Exercícios básicos progressivos](5-exercicios-basicos/desafios.md)                                    |
 
 ```text
 .
@@ -47,11 +49,20 @@ As listas trazem os problemas e resultados esperados; a implementação fica com
 │   ├── desafios.md                # Lista progressiva de exercícios
 │   ├── desafio-aritmetico1.py     # Arquivos para praticar
 │   └── desafio-aritmetico2.py
-└── 3-exercicios-condicionais/
-    ├── teoria.md
-    ├── desafios.md
-    ├── desafio-condicional.py
-    └── desafio-condicional2.py
+├── 3-exercicios-condicionais/
+│   ├── teoria.md
+│   ├── desafios.md
+│   ├── desafio-condicional.py
+│   └── desafio-condicional2.py
+├── 4-aprendendo-POO/
+│   ├── teoria.md                  # Métodos especiais, self, vars e dir
+│   ├── desafios.md                # Prática progressiva de POO
+│   ├── exemplo_metodos_especiais.py
+│   └── classes/                   # Exercícios de classes existentes
+└── 5-exercicios-basicos/
+    ├── teoria.md                  # Variáveis, funções e coleções
+    ├── desafios.md                # Lista de exercícios básicos
+    └── exemplos_listas.py         # Exemplos executáveis com listas
 ```
 
 Os arquivos de desafios em Python são espaços para escrever soluções. Crie novos arquivos conforme avançar na lista.
@@ -72,10 +83,12 @@ python3 app.py
 python3 1-praticando-logica/praticando_print.py
 python3 2-exercicios-aritmeticos/desafio-aritmetico1.py
 python3 3-exercicios-condicionais/desafio-condicional.py
+python3 4-aprendendo-POO/exemplo_metodos_especiais.py
+python3 5-exercicios-basicos/exemplos_listas.py
 ```
 
 No Windows, se `python3` não estiver disponível, experimente `python` ou `py`. Os arquivos de desafios começam vazios e só mostrarão resultados depois que você escrever o código.
 
 ## Contribuições
 
-Para sugerir um exercício ou melhorar uma explicação, abra uma *issue* ou envie um *pull request*. Ao adicionar um desafio, inclua entrada, processamento, saída e pelo menos um exemplo para conferir a resposta.
+Para sugerir um exercício ou melhorar uma explicação, abra uma _issue_ ou envie um _pull request_. Ao adicionar um desafio, inclua entrada, processamento, saída e pelo menos um exemplo para conferir a resposta.

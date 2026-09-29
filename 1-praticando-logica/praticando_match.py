@@ -1,6 +1,5 @@
 """Menu de estudos para praticar funções e match (Python 3.10+)."""
 
-
 def estudar_variaveis():
     print("Estude como guardar valores em variáveis.")
 

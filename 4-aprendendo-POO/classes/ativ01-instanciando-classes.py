@@ -22,7 +22,7 @@ class Restaurant :
     else :
       print(f"O restaurante {self.nome} não está mais em ativa. Não é possível ir até o estabelecimento.")
 
-# A primeira atividade pede para atribuirmos uma Categoria Italiana para a nossa instância.
+# 1. A primeira atividade pede para atribuirmos uma Categoria Italiana para a nossa instância.
 restaurante_italiano = Restaurant()
 restaurante_italiano.nome = "La Masa"
 restaurante_italiano.categoria = "Italiana"
@@ -33,10 +33,10 @@ restaurante_praca.nome = "Leão da Praça"
 restaurante_praca.categoria = "Comida Típica Brasileira"
 restaurante_praca.aberto = True
 
-# Acesse o valor do atributo nome da instância restaurante_praca da classe Restaurante.
+# 2. Acesse o valor do atributo nome da instância restaurante_praca da classe Restaurante.
 print(f"Acessando o atributo nome da instância: {restaurante_praca.nome}")
 
-# Verifique o valor inicial do atributo ativo para a instância restaurante_praca 
+# 3. Verifique o valor inicial do atributo ativo para a instância restaurante_praca
 # e exiba uma mensagem informando se o restaurante está ativo ou inativo.
 if (restaurante_praca.disponivel != False):
   print(f"O restaurante {restaurante_praca.nome} ainda está em ativa. Você pode ir visitá-lo")
